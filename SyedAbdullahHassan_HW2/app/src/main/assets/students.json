@@ -1,0 +1,30 @@
+{
+
+  "students":[
+    {
+      "name":"Nursun",
+      "surname":"Erel",
+      "nationality": "Turkey"
+    },
+    {
+      "name":"Ömer",
+      "surname":"Zümrüt",
+      "nationality": "Pakistan"
+    },
+    {
+      "name":"Abdullah",
+      "surname":"Cambaz",
+      "nationality": "Turkey"
+    },
+    {
+      "name":"Yara",
+      "surname":"Bomba",
+      "nationality": "Egypt"
+    },
+    {
+      "name":"Elif",
+      "surname":"Ömürlü",
+      "nationality": "China"
+    }
+  ]
+}

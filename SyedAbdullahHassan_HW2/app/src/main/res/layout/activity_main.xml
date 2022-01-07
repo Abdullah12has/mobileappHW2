@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="357dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="96dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Welcome to Country Converter"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/et2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="528dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="465dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/et1"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <Spinner
+        android:id="@+id/sp1"
+        android:layout_width="319dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="347dp"
+        android:layout_marginBottom="42dp"
+        android:entries="@array/countries"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.628"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="286dp"
+        android:layout_marginEnd="4dp"
+        android:text="Select Country"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/sp1"
+        app:layout_constraintEnd_toEndOf="@+id/et2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="249dp"
+        android:layout_height="108dp"
+        android:layout_marginBottom="189dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp1">
+
+        <ImageView
+            android:id="@+id/imgM1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn1"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="140dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="44dp"
+        android:onClick="nextPage"
+        android:text="Let's Go"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="doube tap to see food \n Long Press to see Students"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
